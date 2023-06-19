@@ -1,0 +1,71 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Juhan\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\Juhan\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Juhan\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\OpenJDK\openjdk-11.0.16_8\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Users\Juhan\Downloads\Compressed\mongosh-1.6.0-win32-x64\mongosh-1.6.0-win32-x64\bin;C:\Ruby31-x64\bin;C:\Users\Juhan\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\Juhan\AppData\Local\Programs\Python\Python310;C:\Users\Juhan\AppData\Local\Microsoft\WindowsApps;C:\Users\Juhan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Juhan\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Program Files\CodeBlocks\MinGW\bin;C:\Users\Juhan\AppData\Local\Android\Sdk\platform-tools;C:\Users\Juhan\Downloads\scrcpy-win64-v1.24;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, lstat 'I:\Dimvaji\Threft-Shop-Backend\node_modules\@mui\private-theming\package.json'
+
+npm manifest: 
+  {
+    "name": "ecommerce",
+    "version": "1.0.0",
+    "description": "",
+    "main": "Server/server.js",
+    "scripts": {
+      "start": "node Server/server.js",
+      "dev": "nodemon Server/server.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Jubayer Juhan",
+    "license": "ISC",
+    "dependencies": {
+      "@emotion/react": "^11.5.0",
+      "@emotion/styled": "^11.3.0",
+      "@mui/icons-material": "^5.0.5",
+      "@mui/material": "^5.0.6",
+      "@mui/x-data-grid": "^4.0.2",
+      "bcryptjs": "^2.4.3",
+      "chart.js": "^3.6.0",
+      "cloudinary": "^1.27.1",
+      "cookie-parser": "^1.4.5",
+      "cors": "^2.8.5",
+      "country-state-city": "^3.0.1",
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "express-fileupload": "^1.2.1",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^6.0.11",
+      "node-mailjet": "^3.3.4",
+      "nodemailer": "^6.7.0",
+      "nodemon": "^1.19.0",
+      "prop-types": "^15.7.2",
+      "rc-slider": "^9.7.4",
+      "react-avatar": "^3.10.0",
+      "react-carousel-minimal": "^1.4.1",
+      "react-chartjs-2": "^3.3.0",
+      "react-elastic-carousel": "^0.11.5",
+      "react-rangeslider": "^2.2.0",
+      "react-rating-stars-component": "^2.2.0",
+      "redux-logger": "^3.0.6",
+      "stripe": "^8.186.1",
+      "validator": "^13.6.0",
+      "webfontloader": "^1.6.28"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
