@@ -12,9 +12,6 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileupload());
-
- 
-
 app.use(cors());
 
 connectDatabase();
@@ -30,21 +27,21 @@ const user = require("./Routes/userRoute.js");
 const order = require("./Routes/orderRoutes.js");
 const payment = require("./Routes/paymentRoute.js");
 
- 
-
-
-
-//use routes
+// use routes for API
 app.use("/api/v1", product);
 app.use("/api/v1", user);
 app.use("/api/v1", order);
 app.use("/api/v1", payment);
 
- 
+// Serve static files (build) from the 'client/build' directory
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 
+// Define a catch-all route to serve the React app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+});
 
-
-//middleware for error
+// middleware for error
 app.use(errorMiddleWare);
 
 module.exports = app;
